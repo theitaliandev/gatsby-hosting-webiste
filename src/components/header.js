@@ -1,81 +1,127 @@
 import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
+import { MdMoreHoriz } from "react-icons/md";
 
-const StyledHeader = styled.header`
-  display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
-  align-items: center;
+const StyledNav = styled.nav`
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 `;
 
-const StyledTitle = styled.div`
-  background: #1659de;
-  padding: 12px;
-  text-align: right;
-  a,
-  h1 {
-    color: white;
-    font-weight: 400;
-    font-size: 18px;
+const HeaderWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h1,
+  a  {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 87% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 87% 100%, 0% 100%);
+    background: #1659de;
+    padding: 0.4rem 1.4rem;
     text-decoration: none;
-    margin-right: 6px;
+    color: white;
+    font-size: 1.2rem;
+    height: 55px;
+    @media (min-width: 768px) {
+      height: 65px;
+    }
     span {
-      font-weight: bolder;
-      font-size: 20px;
+      font-size: 1.5rem;
+    }
+  }
+  .menu-icon {
+    font-size: 2.2rem;
+    margin-right: 0.8rem;
+    color: #1659de;
+    cursor: pointer;
+    @media (min-width: 768px) {
+      display: none;
     }
   }
 `;
 
-const StyledAbout = styled.div`
-  text-align: center;
-  margin-left: 20px;
-  p {
-    font-size: 16px;
-    display: inline;
-    margin: 7px;
-    color: grey;
+const StyledMenu = styled.ul`
+  padding-inline-start: 0rem;
+  padding: 1.5rem 0rem 0rem 0rem;
+  background: #1659de;
+  height: ${props => (props.toggleState ? "140" : "0")};
+  overflow: hidden;
+  li {
+    list-style-type: none;
+  }
+  a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    display: block;
+    font-weight: 700;
+    color: white;
+    transition: all 0.4s linear;
+    &:hover {
+      background: white;
+      color: #1659de;
+      padding: 0.5rem 1rem 0.5rem 1.3rem;
+    }
+  }
+  @media (min-width: 768px) {
+    height: auto;
+    background: white;
+    display: flex;
+    padding: 0.5rem 0rem;
+    a {
+      color: #1659de;
+      &:hover {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+      }
+    }
   }
 `;
 
-const StyledBlog = styled.div`
-  margin-right: 150px;
-  justify-self: right;
-  font-size: 16px;
-  font-weight: bolder;
-  p {
-    display: inline;
-    color: #2665e0;
-    padding: 7px 17px;
-    border: 1px solid #2665e0;
-    border-radius: 4px;
+export default class Header extends React.Component {
+  state = {
+    navbarOpen: false
+  };
+  handleNavbar = () => {
+    this.setState(() => {
+      return {
+        navbarOpen: !this.state.navbarOpen
+      };
+    });
+  };
+  render() {
+    return (
+      <StyledNav>
+        <HeaderWrapper>
+          <Link to="/">
+            <h1>
+              Wordpress <span>Hosting</span>
+            </h1>
+          </Link>
+          <MdMoreHoriz
+            className="menu-icon"
+            onClick={() => this.handleNavbar()}
+          />
+        </HeaderWrapper>
+        <StyledMenu toggleState={this.state.navbarOpen}>
+          <Link to="recensioni">
+            <li>Recensioni</li>
+          </Link>
+          <Link to="blog">
+            <li>Blog</li>
+          </Link>
+          <Link to="contattami">
+            <li>Contattami</li>
+          </Link>
+          <Link to="chi-sono">
+            <li>Chi Sono</li>
+          </Link>
+        </StyledMenu>
+      </StyledNav>
+    );
   }
-  .recensioni {
-    border: none;
-    margin-right: 10px;
-  }
-`;
+}
 
-const Header = () => (
-  <StyledHeader>
-    <StyledTitle>
-      <h1>
-        <Link to="/">
-          Wordpress&nbsp;<span>hosting</span>
-        </Link>
-      </h1>
-    </StyledTitle>
-    <StyledAbout>
-      <p />
-      <p>Chi sono</p>
-      <p>Contattami</p>
-    </StyledAbout>
-    <StyledBlog>
-      <div>
-        <p className="recensioni">Recensioni</p>
-        <p>Blog</p>
-      </div>
-    </StyledBlog>
-  </StyledHeader>
-);
-
-export default Header;
+/* #1659de  */

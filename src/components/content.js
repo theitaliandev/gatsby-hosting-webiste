@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledContent = styled.main`
-  margin: 0px 100px;
-  background: grey;
+  margin: 20px 100px;
 `;
 
 const Content = ({ data }) => <StyledContent>{data}</StyledContent>;

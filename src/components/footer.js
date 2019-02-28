@@ -2,7 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledFooter = styled.footer`
-  background: red;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.5px solid grey;
+  padding: 1rem;
 `;
 
 const Footer = () => (
