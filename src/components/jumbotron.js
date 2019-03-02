@@ -5,7 +5,7 @@ const StyledJumbotron = styled.div`
   background: #1659de;
   height: auto;
   text-align: center;
-  padding: 0.5rem;
+  padding: 2rem;
   h2 {
     font-size: 2.6rem;
     color: white;
@@ -26,10 +26,10 @@ const StyledJumbotron = styled.div`
   }
 `;
 
-const Jumbotron = () => (
+const Jumbotron = ({ titolo, sottotitolo }) => (
   <StyledJumbotron>
-    <h2>Migliori Hosting per Wordpress</h2>
-    <h3>In base ad uptime, velocità di caricamento e costo...</h3>
+    <h2>{titolo}</h2>
+    <h3>{sottotitolo}</h3>
   </StyledJumbotron>
 );
 

@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   min-height: 100vh;
 `;
 
-const Layout = ({ children }) => (
+const Layout = ({ children, titolo, sottotitolo }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -32,7 +32,7 @@ const Layout = ({ children }) => (
         <GlobalStyle />
         <Wrapper>
           <Header siteTitle={data.site.siteMetadata.title} />
-          <Jumbotron />
+          <Jumbotron titolo={titolo} sottotitolo={sottotitolo} />
           <Content data={children} />
           <Footer />
         </Wrapper>

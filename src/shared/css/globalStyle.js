@@ -1,12 +1,18 @@
 import { createGlobalStyle } from "styled-components";
-import Montserrat from "./fonts";
+import { MontserratRegular, MontserratBold } from "./fonts";
 
 export default createGlobalStyle`
   @font-face {
       font-family: "Montserrat";
       font-style: normal;
       font-weight: normal;
-      src: local("Montserrat"), url(${Montserrat})format("woff2");
+      src: local("MontserratRegular"), url(${MontserratRegular})format("woff2");
+  }
+  @font-face {
+    font-family: "Montserrat";
+    font-style: bold;
+    font-weight: bold;
+    src: local("MontserratBold")url(${MontserratBold}format("woff2"));
   }
   html {
     box-sizing: border-box;

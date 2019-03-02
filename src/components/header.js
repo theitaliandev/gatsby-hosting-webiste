@@ -123,5 +123,3 @@ export default class Header extends React.Component {
     );
   }
 }
-
-/* #1659de  */

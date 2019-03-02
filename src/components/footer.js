@@ -3,18 +3,28 @@ import styled from "styled-components";
 
 const StyledFooter = styled.footer`
   background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   border-top: 0.5px solid grey;
   padding: 1rem;
+  a {
+    text-decoration: none;
+    color: #1659de;
+  }
+  span {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
 `;
 
 const Footer = () => (
   <StyledFooter>
-    © {new Date().getFullYear()}, Built with
-    {` `}
-    <a href="https://www.gatsbyjs.org">Gatsby</a>
+    <div>
+      <span>Besty5 Internet Solutions</span>&nbsp;PI: 03592930782
+    </div>
+    <div>
+      © {new Date().getFullYear()}, Made with ❤️ and built with&nbsp;
+      <a href="https://www.gatsbyjs.org">Gatsby</a>
+    </div>
   </StyledFooter>
 );
 
