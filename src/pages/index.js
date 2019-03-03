@@ -24,6 +24,7 @@ const BoxNascosto = styled.div`
   border-radius: 10px;
   background: #1659de;
   padding: 1rem;
+  transition: all 1sec linear;
   .titolo-icona {
     display: flex;
     justify-content: space-between;
