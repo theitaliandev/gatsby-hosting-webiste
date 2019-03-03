@@ -41,7 +41,7 @@ const BoxNascosto = styled.div`
 `;
 
 const StyledAddIcon = styled(MdAddCircleOutline)`
-  /* display: ${props => (props.statoBoxNascosto ? "none" : "unset")}; */
+  display: ${props => (props.statoBoxNascosto ? "none" : "unset")};
   color: white;
   cursor: pointer;
   max-width: 3em;
@@ -51,16 +51,16 @@ const StyledAddIcon = styled(MdAddCircleOutline)`
   margin: 0px 20px;
 `;
 
-// const StyledCloseIcon = styled(MdRemoveCircleOutline)`
-//   display: ${props => (props.statoBoxNascosto ? "unset" : "none")};
-//   color: white;
-//   cursor: pointer;
-//   max-width: 3em;
-//   max-height: 3em;
-//   min-width: 1.5em;
-//   min-height: 1.5em;
-//   margin: 0px 20px;
-// `;
+const StyledCloseIcon = styled(MdRemoveCircleOutline)`
+  display: ${props => (props.statoBoxNascosto ? "unset" : "none")};
+  color: white;
+  cursor: pointer;
+  max-width: 3em;
+  max-height: 3em;
+  min-width: 1.5em;
+  min-height: 1.5em;
+  margin: 0px 20px;
+`;
 
 const ContenutoBoxNascosto = styled.div`
   height: ${props => (props.statoBoxNascosto ? "auto" : "0")};
@@ -200,10 +200,10 @@ export default class IndexPage extends React.Component {
                 statoBoxNascosto={this.state.boxNascostoOpen}
                 onClick={() => this.handleBoxNascosto()}
               />
-              {/* <StyledCloseIcon
+              <StyledCloseIcon
                 statoBoxNascosto={this.state.boxNascostoOpen}
                 onClick={() => this.handleBoxNascosto()}
-              /> */}
+              />
             </div>
             <ContenutoBoxNascosto statoBoxNascosto={this.state.boxNascostoOpen}>
               Nella scelta di un servizio di hosting ci sono sicuramente diversi
