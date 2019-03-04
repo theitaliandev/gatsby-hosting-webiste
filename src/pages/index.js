@@ -17,6 +17,10 @@ const Wrapper = styled.article`
       margin: 10px auto;
     }
   }
+  .bold {
+    font-weight: bold;
+    font-family: sans-serif;
+  }
 `;
 
 const BoxNascosto = styled.div`
@@ -67,21 +71,31 @@ const ContenutoBoxNascosto = styled.div`
   overflow: hidden;
   background: white;
   padding: ${props => (props.statoBoxNascosto ? "15px" : "0")};
+  h3 {
+    font-size: 1.4rem;
+  }
 `;
 
 export default class IndexPage extends React.Component {
   state = {
-    boxNascostoOpen: false
+    boxNascosto1Open: false,
+    boxNascosto2Open: false
   };
-  handleBoxNascosto = () => {
+  handleBoxNascosto1 = () => {
     this.setState(() => {
       return {
-        boxNascostoOpen: !this.state.boxNascostoOpen
+        boxNascosto1Open: !this.state.boxNascosto1Open
+      };
+    });
+  };
+  handleBoxNascosto2 = () => {
+    this.setState(() => {
+      return {
+        boxNascosto2Open: !this.state.boxNascosto2Open
       };
     });
   };
   render() {
-    console.log(this.state.boxNascostoOpen);
     return (
       <Layout
         titolo="Migliori Hosting per Wordpress"
@@ -132,24 +146,12 @@ export default class IndexPage extends React.Component {
               online, è innegabile che se si vuole raggiungere una fetta di
               pubblico quanto più ampia possibile ci sia la necessità di fare le
               cose per bene; allora, ecco che arriva la tematica{" "}
-              <span
-                style={{
-                  fontWeight: "bold",
-                  fontFamily: "sans-serif"
-                }}
-              >
-                “hosting”
-              </span>
+              <span className="bold">“hosting”</span>
               . Se sei giunto fin qui, di sicuro sai di cosa stiamo parlando.
               <br />
               <br />
               Scegliere{" "}
-              <span
-                style={{
-                  fontWeight: "bold",
-                  fontFamily: "sans-serif"
-                }}
-              >
+              <span className="bold">
                 l’hosting giusto per il tuo sito Wordpress
               </span>{" "}
               è <span style={{ fontStyle: "italic" }}>molto</span> importante.
@@ -157,26 +159,13 @@ export default class IndexPage extends React.Component {
               la tua soddisfazione) dipenderanno dall’hosting che tu sceglierai.
               <br />
               <br /> Ma{" "}
-              <span
-                style={{
-                  fontWeight: "bold",
-                  fontFamily: "sans-serif"
-                }}
-              >
+              <span className="bold">
                 come fare a sapere quale è il migliore hosting Wordpress?
               </span>{" "}
               La nostra guida, che è frutto sia della nostra esperienza diretta
               che di quella di utenti certificati di questi servizi, ti servirà
               proprio a valutare quale, tra i tanti servizi di hosting
-              disponibili, sia{" "}
-              <span
-                style={{
-                  fontWeight: "bold",
-                  fontFamily: "sans-serif"
-                }}
-              >
-                il più adatto a te.
-              </span>{" "}
+              disponibili, sia <span className="bold">il più adatto a te.</span>{" "}
               <br />
               <br />
               Online esistono davvero molti servizi che possono fare al caso
@@ -186,7 +175,8 @@ export default class IndexPage extends React.Component {
               <br /> Se hai fretta e non vuoi scendere troppo nel dettaglio, da’
               un’occhiata alla nostra tabella comparativa! Tuttavia, ti
               consigliamo di capire prima quali sono i parametri che dovrebbero
-              guidarti nella tua scelta (ti basterà aprire i link in basso).
+              guidarti nella tua scelta (ti basterà cliccare sull'iconcina "+"
+              in basso per approfondire l'argomento).
               <br />
               <br />
             </p>
@@ -197,15 +187,17 @@ export default class IndexPage extends React.Component {
                 Parametri guida per la scelta del miglior hosting Wordpress
               </h2>
               <StyledAddIcon
-                statoBoxNascosto={this.state.boxNascostoOpen}
-                onClick={() => this.handleBoxNascosto()}
+                statoBoxNascosto={this.state.boxNascosto1Open}
+                onClick={() => this.handleBoxNascosto1()}
               />
               <StyledCloseIcon
-                statoBoxNascosto={this.state.boxNascostoOpen}
-                onClick={() => this.handleBoxNascosto()}
+                statoBoxNascosto={this.state.boxNascosto1Open}
+                onClick={() => this.handleBoxNascosto1()}
               />
             </div>
-            <ContenutoBoxNascosto statoBoxNascosto={this.state.boxNascostoOpen}>
+            <ContenutoBoxNascosto
+              statoBoxNascosto={this.state.boxNascosto1Open}
+            >
               Nella scelta di un servizio di hosting ci sono sicuramente diversi
               parametri da tenere in considerazione: la velocità, l’uptime, il
               valore dell’assistenza tecnica e la sicurezza sono i primi a
@@ -213,8 +205,228 @@ export default class IndexPage extends React.Component {
               decidere quale servizio utilizzare sono sempre e soltanto i tuoi
               bisogni! Dal punto di vista tecnico, ricorda che sarà necessario
               tenere in considerazione almeno i seguenti tre parametri:
+              <br />
+              <br />
+              <ul>
+                <li>
+                  <span className="bold">Velocità - </span>
+                  conosciuta anche come "tempo di caricamento"
+                </li>
+                <li>
+                  <span className="bold">Uptime - </span>
+                  deve essere almeno 99.94%
+                </li>
+                <li>
+                  <span className="bold">Assistenza - </span>
+                  il centro di assistenza del tuo host deve essere disponibile
+                  h24 e capace di risolvere ogni questione legata all’hosting
+                  del tuo sito WordPress.
+                </li>
+              </ul>
+              <br />
+              Tuttavia, ci sono anche altre considerazioni che potrebbe essere
+              necessario che tu faccia.
+              <br />
+              <br />
+              <h3>Hosting Wordpress: condiviso, VPS o dedicato?</h3>
+              <br />
+              La soluzione di <span className="bold">hosting condiviso</span> è
+              sicuramente apprezzabile e consigliata a chi sta{" "}
+              <span className="bold">
+                partendo adesso con il proprio sito web
+              </span>{" "}
+              e, chiaramente, non ha ancora idea di quanto traffico potrebbe
+              generare il proprio sito. Cosa vuol dire, però, hosting condiviso?
+              Be’... è un po’ come vivere in condominio: hai il tuo
+              “appartamento”, ma è pur sempre all’interno di uno spazio comune,
+              pertanto non potrai mai avere risorse “illimitate”. Ciò è un bene
+              o un male?
+              <br />
+              <br />
+              Di sicuro, all’inizio non ci sono aspetti negativi; tuttavia,
+              quando il tuo sito crescerà e sarà in grado di generare un
+              traffico considerevole, potresti essere costretto (dal tuo
+              provider o dalle necessità) ad effettuare un upgrade del tuo
+              piano. Niente di sconvolgente, ma è bene che questa cosa ti sia
+              chiara.
+              <br />
+              <br />
+              <h3>Hosting VPS: cos’è e a chi può servire</h3>
+              <br />
+              Una soluzione di mezzo tra l’hosting condiviso e l’hosting
+              dedicato è sicuramente il{" "}
+              <span className="bold">VPS (Virtual Private Sever)</span>: si
+              tratta di un unico server fisico “partizionato” in diversi server
+              virtuali. Questa soluzione permette di coniugare costi un po’ più
+              limitati rispetto ad una soluzione di hosting dedicato con la
+              flessibilità che è propria, appunto, di un hosting Wordpress
+              dedicato. Fa’ attenzione solo ad una cosa: se non hai competenze
+              di tipo tecnico,{" "}
+              <span className="bold">
+                assicurati di acquistare una soluzione “managed” (ovvero,
+                gestita dal provider)
+              </span>
+              ; in questo modo, il provider sarà in grado di fornirti un elevato
+              livello di assistenza e gestire per te le problematiche tecniche
+              relative al tuo servizio di hosting. Ti consigliamo questa
+              soluzione se hai un blog, sei uno sviluppatore o hai un business
+              di medie dimensioni.
+              <br />
+              <br />
+              <h3>Hosting Dedicato: cos’è e a chi può servire</h3>
+              <br />
+              Infine, ecco la soluzione più costosa, ma che ti garantisce il
+              massimo della performance: l’
+              <span className="bold">hosting dedicato</span>. Questa soluzione
+              prevede che un intero server sia dedicato a te e al tuo sito, con
+              tutti i pro e i contro del caso. I pro si possono riassumere con
+              la semplice formula{" "}
+              <span className="bold">“massima flessibilità”</span>, ovvero sarai
+              in grado di decidere ogni minimo dettaglio (es: sistema operativo,
+              ecc) relativo alla gestione del tuo server. Tuttavia, proprio la
+              gestione del server potrebbe essere un contro notevole: se non hai
+              esperienza a livello tecnico relativa alla gestione del server,
+              allora è bene dedicarsi ad una soluzione di host “amministrato”,
+              ovvero cedendo al tuo provider l’onere di amministrare per te la
+              parte tecnica del tuo hosting.
             </ContenutoBoxNascosto>
           </BoxNascosto>
+          <br />
+          <p>
+            Eccoci qui: dopo mesi di prove, nostre e di utenti che hanno deciso
+            di collaborare con noi, ti proponiamo quelli che a nostro avviso
+            sono i migliori servizi di hosting Wordpress attualmente sul
+            mercato.
+          </p>
+          <br />
+          <p>
+            <span className="bold">È bene precisare che</span>: noi guadagnamo
+            una commissione nel momento in cui tu deciderai di acquistare uno
+            dei servizi proposti in questo articolo attraverso i nostri link di
+            affiliazione. Grazie a questi introiti riusciamo a mantenere
+            operativo ed aggiornato{" "}
+            <span style={{ color: "red" }}>“nome del sito”</span>. Grazie mille
+            per il tuo supporto.
+          </p>
+          <br />
+          <p>
+            <span className="bold">P.S.</span> Noi non possiamo garantirti
+            risultati e metriche dell’uptime o della velocità del tuo sito
+            WordPress dal momento che queste variano in base a svariati fattori:
+            pacchetto hosting per WordPress scelto, dimensioni del tuo sito,
+            traffico ricevuto ecc…
+          </p>
+          <br />
+          <BoxNascosto style={{ background: "red" }}>
+            <div className="titolo-icona">
+              <h2>Perché dovresti fidarti di noi?</h2>
+              <StyledAddIcon
+                statoBoxNascosto={this.state.boxNascosto2Open}
+                onClick={() => this.handleBoxNascosto2()}
+              />
+              <StyledCloseIcon
+                statoBoxNascosto={this.state.boxNascosto2Open}
+                onClick={() => this.handleBoxNascosto2()}
+              />
+            </div>
+            <ContenutoBoxNascosto
+              statoBoxNascosto={this.state.boxNascosto2Open}
+            >
+              <h3>Hai bisogno di aiuto?</h3>
+              <br />
+              <p>
+                <span className="bold">
+                  La scelta di un hosting per WordPress può essere una cosa
+                  complicata e ti capiamo
+                </span>
+                . Per cui vogliamo solo che tu sappia che siamo qui per guidarti
+                nella scelta. Se la scelta dell’hosting per WordPress ti blocca
+                mentre imposti il tuo nuovo sito, o hai qualsiasi domanda a
+                riguardo saremo felici di aiutarti. Sentiti libero di inviarci
+                un commento o di scrivere una mail all’indirizzo dedicato, che
+                troverai in basso!
+              </p>
+              <br />
+              <h3>Perché dovresti fidarti di noi?</h3>
+              <br />
+              <p>
+                Come ti abbiamo già detto in precedenza, i parametri in base ai
+                quali scegliere il provider più adatto alle tue esigenze sono
+                spesso oggettivi e quantificabili, ma la scelta finale dipenderà
+                da te e dalle tue esigenze. Chiaramente, non è facile navigare
+                in un mare così vasto se non si hanno ancora gli strumenti
+                adatti a farlo: ecco, noi vogliamo essere la tua bussola e la
+                tua stella polare!
+              </p>
+              <br />
+              <p>
+                I provider di hosting occupano una grossa fetta del business
+                online: è un mercato da 16 miliardi di dollari nei soli Stati
+                Uniti ed ogni anno cresce del 10%. Chiaramente, stiamo parlando
+                di cifre totali, da cui estrapolare quelle legate al solo
+                business degli hosting condivisi sarebbe un piccolo azzardo;
+                tuttavia, ipotizzare che questo servizio rappresenti il 50% di
+                quelli erogati in totale potrebbe non essere così lontano dalla
+                realtà.
+              </p>
+              <br />
+              <p>
+                Quindi, ogni volta che ti imbatti nella lettura di una
+                sensazionale recensione sui migliori hosting per WordPress, non
+                dimenticare un particolare importantissimo:{" "}
+                <span className="bold">
+                  queste compagnie offrono tra le più alte commissioni nel
+                  mercato del programma di affiliazioni.
+                </span>
+              </p>
+              <br />
+              <p>
+                E allora è facile che la maggior parte delle guide siano state
+                scritte con il solo scopo di invogliarti a cliccare sui link di
+                affiliazione e generare commissioni interessanti per gli autori
+                di queste fantomatiche “reviews”. Che tradotto significa:
+                generare profitto senza curarsi minimamente di indirizzare la
+                propria utenza alla scelta migliore.
+              </p>
+              <br />
+              <p>
+                <span className="bold">
+                  Perché, allora, dovresti credere che siamo diversi dagli
+                  altri?
+                </span>
+                Il motivo è semplice: vogliamo essere riconosciuti come
+                affidabili, obiettivi e onesti, vogliamo che, dopo il tuo primo
+                acquisto, tu possa tornare da noi per una richiesta di supporto,
+                per chiederci un consiglio o, semplicemente, per tenerti
+                aggiornato. In poche parole,{" "}
+                <span className="bold">
+                  vogliamo che tu senta di poterti fidare di noi!
+                </span>
+              </p>
+              <br />
+              <p>
+                Per questo, abbiamo elaborato una strategia chiara e lineare di
+                cui vogliamo metterti al corrente: come imprenditori online e
+                come appassionati di tecnologia abbiamo provato con mano alcuni
+                dei servizi di hosting che ti proporremo, mentre per altri ci
+                siamo affidati alle esperienze dei colleghi che abbiamo aiutato
+                nella scelta e nella cura dei loro servizi di hosting o che,
+                semplicemente, si sono offerti di fornirci il loro punto di
+                vista e la loro esperienza. Insomma, direttamente o
+                indirettamente, abbiamo avuto modo di toccare con mano molti di
+                questi servizi e, pertanto, siamo sicuri di non rifilarti delle
+                “sole”.
+              </p>
+              <br />
+              <p>
+                Dopo questa necessaria precisazione, è ora tempo di capire quale
+                hosting per WordPress risponderà alla perfezione a tutte le tue
+                esigenze.
+              </p>
+            </ContenutoBoxNascosto>
+          </BoxNascosto>
+          <br />
+          <h2>Migliori Hosting per WordPress</h2>
         </Wrapper>
       </Layout>
     );
