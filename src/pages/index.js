@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import immagine1 from "../images/300.png";
+import banner from "../images/1024.png";
 import { MdAddCircleOutline, MdRemoveCircleOutline } from "react-icons/md";
 
 const Wrapper = styled.article`
@@ -73,6 +74,58 @@ const ContenutoBoxNascosto = styled.div`
   padding: ${props => (props.statoBoxNascosto ? "15px" : "0")};
   h3 {
     font-size: 1.4rem;
+  }
+`;
+
+const BannerSitiHosting = styled.img`
+  width: 100vw;
+  margin-left: -40px;
+  @media (min-width: 481px) {
+    margin-left: -80px;
+  }
+  @media (min-width: 768px) {
+    margin-left: -120px;
+  }
+  @media (min-width: 1024px) {
+    margin-left: -200px;
+  }
+`;
+
+const ProBox = styled.div`
+  border: solid 2px green;
+  padding: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+`;
+
+const ProBoxTitle = styled.div`
+  background: green;
+  padding: 0.5rem;
+  color: white;
+  font-style: bold;
+  margin-bottom: 1rem;
+`;
+
+const ConstBox = styled.div`
+  border: solid 2px red;
+  padding: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+`;
+
+const ConstBoxTitle = styled.div`
+  background: red;
+  padding: 0.5rem;
+  color: white;
+  font-style: bold;
+  margin-bottom: 1rem;
+`;
+
+const ProConstContainer = styled.div`
+  @media (min-width: 1100px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
   }
 `;
 
@@ -427,6 +480,105 @@ export default class IndexPage extends React.Component {
           </BoxNascosto>
           <br />
           <h2>Migliori Hosting per WordPress</h2>
+          <br />
+          <p>
+            Dopo le doverose premesse del caso, siamo pronti a partire e
+            scoprire quali sono i migliori provider di hosting WordPress!
+            Concedici solo un’ultima, doverosa precisazione: ci siamo
+            concentrati su quei servizi che possano essere davvero efficaci per
+            te, escludendone altri che, magari, sono famosi e validi, ma che, a
+            nostro avviso, sono troppo concentrati sul mercato statunitense e
+            troppo poco su quello italiano ed europeo.
+          </p>
+          <br />
+          <p>
+            <span className="bold">
+              Possiamo ora rispondere alla fatidica domanda: quali sono i
+              migliori servizi di hosting per Wordpress?
+            </span>
+          </p>
+          <br />
+          <h2>
+            1. SiteGround (
+            <span style={{ color: "#1659de" }}>www.SiteGround.com</span>)
+          </h2>
+          <br />
+          <BannerSitiHosting src={banner} alt="banner" />
+          <br />
+          <ul>
+            <li>
+              <span className="bold">Uptime:</span> 99.99%
+            </li>
+            <li>
+              <span className="bold">Tempo di caricamento:</span> 714ms
+            </li>
+            <li>
+              <span className="bold">Assistenza clienti:</span> 5/5
+            </li>
+            <li>
+              <span className="bold">Sito internet:</span>{" "}
+              <span style={{ color: "#1659de" }}>www.SiteGround.com</span>
+            </li>
+          </ul>
+          <br />
+          <p>
+            Dal 2004, anno in cui è stata fondata, SiteGround è cresciuta fino a
+            raggiungere la quota di oltre 800.000 domini ospitati. La maggior
+            parte dello staff è locato in Bulgaria, ma hanno server sparsi in
+            tutto il mondo.
+          </p>
+          <br />
+          <p>
+            Come tutti i migliori provider di hosting Wordpress, anche
+            SiteGround offre diversi piani ai propri clienti, a seconda delle
+            esigenze che questi possono palesare nel corso del tempo. Le
+            metriche dello “Start-Up Plan” (il più economico, con un costo di
+            3.95€/mese) sono a dir poco eccellenti: evidenziano un solido 99.99%
+            di uptime medio (1 sola ora di offline durante l’anno solare)
+            seguito da un tempo di caricamento (non tra i più alti) di circa
+            714ms.
+          </p>
+          <br />
+          <p>
+            La nota più piacevole è quasi sicuramente l’assistenza clienti.
+            Sempre cordiali e disponibili nelle live chat instaurate, hanno
+            anche affrontato con successo problemi di non facile risoluzione,
+            sconfinando spesso in territori non di loro competenza contrattuale,
+            ad esempio: modifiche del file .htaccess per alcuni redirect e
+            analisi del report generato da Gtmetrix relativo al tempo di
+            caricamento del sito con seguenti interventi risolutivi.
+          </p>
+          <br />
+          <p>
+            <span className="bold">TOP!</span>
+          </p>
+          <br />
+          <p>
+            In aggiunta SiteGround offre una migrazione gratuita per siti
+            internet già esistenti ed è ufficialmente come hosting provider da
+            WordPress.
+          </p>
+          <br />
+          <ProConstContainer>
+            <ProBox>
+              <ProBoxTitle>PRO</ProBoxTitle>
+              <p>
+                Ottimo uptime. Migliore supporto per siti costruiti su
+                piattaforma WordPress. Una migrazione di sito esistente
+                gratuita. Ufficialmente raccomandato da WordPress.org. SSL
+                gratuito.
+              </p>
+            </ProBox>
+            <br />
+            <ConstBox>
+              <ConstBoxTitle>CONTRO</ConstBoxTitle>
+              <p>
+                Tempo di caricamento non ai livelli dei top competitor. Il piano
+                “GoGeek” un po’ troppo costoso. (clicca qui per vedere i prezzi
+                attuali dei piani di abbonamento offerti da SiteGround).
+              </p>
+            </ConstBox>
+          </ProConstContainer>
         </Wrapper>
       </Layout>
     );
