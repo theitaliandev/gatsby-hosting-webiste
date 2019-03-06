@@ -569,7 +569,6 @@ export default class IndexPage extends React.Component {
                 gratuito.
               </p>
             </ProBox>
-            <br />
             <ConstBox>
               <ConstBoxTitle>CONTRO</ConstBoxTitle>
               <p>
