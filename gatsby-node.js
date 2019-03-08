@@ -1,24 +1,20 @@
 const path = require("path");
 
-exports.createPages = ({ graphql, actions }) => {
+exports.createPages = async function({ graphql, actions }) {
   const { createPage } = actions;
-  async function postsQuery() {
-    let result = await graphql(`
-      {
-        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-          edges {
-            node {
-              frontmatter {
-                slug
-              }
+  await graphql(`
+    {
+      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+        edges {
+          node {
+            frontmatter {
+              slug
             }
           }
         }
       }
-    `);
-    return result;
-  }
-  postsQuery().then(result => {
+    }
+  `).then(result => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
         path: "/blog/" + node.frontmatter.slug,
@@ -28,8 +24,6 @@ exports.createPages = ({ graphql, actions }) => {
         }
       });
     });
-  });
-  postsQuery().then(result => {
     const posts = result.data.allMarkdownRemark.edges;
     const postsPerPage = 2;
     const numPages = Math.ceil(posts.length / postsPerPage);

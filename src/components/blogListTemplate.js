@@ -25,7 +25,7 @@ const BlogList = ({ data, pageContext }) => {
       <ul>
         {data.allMarkdownRemark.edges.map(edge => (
           <li key={edge.node.frontmatter.title}>
-            <Link to={`blog/${edge.node.frontmatter.slug}`}>
+            <Link to={`/blog/${edge.node.frontmatter.slug}`}>
               {edge.node.frontmatter.title}
             </Link>
           </li>
