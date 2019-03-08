@@ -4,21 +4,22 @@ import { Link } from "gatsby";
 
 import Layout from "./layout";
 
+function nextPage(i, numPages) {
+  if (i < numPages - 1) {
+    return <Link to={`/blog/pagina${i + 1}`}>Prossima Pagina</Link>;
+  }
+}
+function previousPage(i) {
+  if (i === 0) return;
+  if (i === 1) {
+    return <Link to="/blog">Pagina Precedente</Link>;
+  }
+  if (i > 1) {
+    return <Link to={`/blog/pagina${i - 1}`}>Pagina Precedente</Link>;
+  }
+}
+
 const BlogList = ({ data, pageContext }) => {
-  function nextPage(i, numPages) {
-    if (i < numPages - 1) {
-      return <Link to={`/blog/pagina${i + 1}`}>Prossima Pagina</Link>;
-    }
-  }
-  function previousPage(i, numPages) {
-    if (i === 0) return;
-    if (i === 1) {
-      return <Link to="/blog">Pagina Precedente</Link>;
-    }
-    if (i > 1) {
-      return <Link to={`/blog/pagina${i - 1}`}>Pagina Precedente</Link>;
-    }
-  }
   return (
     <Layout>
       <ul>
