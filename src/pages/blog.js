@@ -1,11 +1,14 @@
 import React from "react";
 
 import Layout from "../components/layout";
+import BlogList from "../components/blogListTemplate";
 
-const Blog = () => (
-  <Layout>
-    <h2>Blog</h2>
-  </Layout>
-);
+const Blog = () => {
+  return (
+    <Layout>
+      <BlogList />
+    </Layout>
+  );
+};
 
 export default Blog;
