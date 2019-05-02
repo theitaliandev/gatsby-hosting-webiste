@@ -578,6 +578,105 @@ export default class IndexPage extends React.Component {
               </p>
             </ConstBox>
           </ProConstContainer>
+          <br />
+          <br />
+          <h2>
+            2. GoDaddy (<span style={{ color: "#1659de" }}>it.GoDaddy.com</span>
+            )
+          </h2>
+          <br />
+          <BannerSitiHosting src={banner} alt="banner" />
+          <br />
+          <ul>
+            <li>
+              <span className="bold">Uptime:</span> 99.97%
+            </li>
+            <li>
+              <span className="bold">Tempo di caricamento:</span> 1040ms
+            </li>
+            <li>
+              <span className="bold">Assistenza clienti:</span> 3/5
+            </li>
+            <li>
+              <span className="bold">Sito internet:</span>{" "}
+              <span style={{ color: "#1659de" }}>it.godaddy.com</span>
+            </li>
+          </ul>
+          <br />
+          <p>
+            GoDaddy è di sicuro uno dei{" "}
+            <span className="bold">
+              servizi di hosting WordPress più noti in assoluto.
+            </span>{" "}
+            Fondata nel 1997, i suoi 17 milioni di utenti sparsi in tutto il
+            mondo ne certificano l’affidabilità e la qualità dei servizi!
+          </p>
+          <br />
+          <p>
+            I <span className="bold">piani di GoDaddy</span>, se sottoscritti
+            annualmente, hanno prezzi che partono da 3.04€/mese fino a
+            10.36€/mese del piano “Ultimate”. In cosa si differiscono questi
+            piani? Con il piano economy si parte da 30GB di spazio di
+            memorizzazione e larghezza di banda illimitata, fino ad arrivare,
+            considerando i piani intermedi, ad una velocità di elaborazione
+            raddoppiata e a database illimitati. Il piano che ti consigliamo noi
+            è almeno il piano economy, che include anche l’acquisto di un
+            dominio per un anno.
+          </p>
+          <br />
+          <p>
+            <span className="bold">Come ci siamo trovati con GoDaddy?</span>{" "}
+            Decisamente bene! L’uptime del 99.97% è sicuramente garanzia di un
+            sito stabile e quasi sempre online, il che si traduce, per te e per
+            il tuo business in più visibilità e meno grattacapi. Il parametro
+            che non ci ha fatto impazzire è sicuramente il tempo di caricamento:
+            1040ms, in un mondo alla continua ricerca della velocità è
+            decisamente tutto.
+          </p>
+          <br />
+          <p>
+            <span className="bold">Il servizio clienti è valido</span>,
+            purtroppo però si sente fortemente{" "}
+            <span className="bold">la mancanza di una live chat h24</span>, per
+            questo motivo il nostro voto è sceso a 3/5, nonostante l’ottima
+            qualità del servizio offerto.
+          </p>
+          <br />
+          <ProConstContainer>
+            <ProBox>
+              <ProBoxTitle>PRO</ProBoxTitle>
+              <p>Affidabilità e gentilezza del servizio clienti.</p>
+            </ProBox>
+            <ConstBox>
+              <ConstBoxTitle>CONTRO</ConstBoxTitle>
+              <p>Mancanza di una live chat, tempi di caricamento elevati</p>
+            </ConstBox>
+          </ProConstContainer>
+          <br />
+          <br />
+          <h2>
+            3. Bluehost (
+            <span style={{ color: "#1659de" }}>www.Bluehost.com</span>)
+          </h2>
+          <br />
+          <BannerSitiHosting src={banner} alt="banner" />
+          <br />
+          <ul>
+            <li>
+              <span className="bold">Uptime:</span> >99.9%
+            </li>
+            <li>
+              <span className="bold">Tempo di caricamento:</span> 419ms
+            </li>
+            <li>
+              <span className="bold">Assistenza clienti:</span> 5/5
+            </li>
+            <li>
+              <span className="bold">Sito internet:</span>{" "}
+              <span style={{ color: "#1659de" }}>www.Bluehost.com</span>
+            </li>
+          </ul>
+          <br />
         </Wrapper>
       </Layout>
     );
