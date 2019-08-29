@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Migliori Hosting per Wordpress`,
     description: `Abbiamo testato e recensito i migliori hosting per Wordpress.`,
+    siteUrl: "https://neunet.it",
     author: `@neunet`
   },
   plugins: [
