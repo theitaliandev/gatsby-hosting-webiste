@@ -23,13 +23,20 @@ const HeaderWrapper = styled.div`
     padding: 0.4rem 1.4rem;
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
-    height: 55px;
+    font-size: 0.9rem;
+    height: 58px;
     @media (min-width: 768px) {
-      height: 65px;
+      height: 70px;
+      h1,
+      a {
+        font-size: 1.2rem;
+      }
+      span {
+        font-size: 1.7rem;
+      }
     }
     span {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
   }
   .menu-icon {
@@ -53,7 +60,7 @@ const StyledMenu = styled.ul`
     list-style-type: none;
   }
   a {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
     padding: 0.5rem 1rem 0.5rem 1rem;
     display: block;
