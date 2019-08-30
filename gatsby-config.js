@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Migliori Hosting per Wordpress`,
+    title: `NeuWP - Guida ai Migliori Hosting Wordpress`,
     description: `Abbiamo testato e recensito i migliori hosting per Wordpress.`,
     siteUrl: "https://neunet.it",
     author: `@neunet`
@@ -19,6 +19,13 @@ module.exports = {
       options: {
         name: `posts`,
         path: `${__dirname}/src/pages/blog/posts`
+      }
+    },
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "UA-109556266-4",
+        head: true
       }
     },
     `gatsby-transformer-sharp`,

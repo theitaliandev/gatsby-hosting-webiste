@@ -19,7 +19,7 @@ const StyledFooter = styled.footer`
 const Footer = () => (
   <StyledFooter>
     <div>
-      <span>Besty5 Internet Solutions</span>&nbsp;PI: 03592930782
+      <span>NeuWP - Migliori Hosting Wordpress</span>&nbsp;PI: 03592930782
     </div>
     <div>
       © {new Date().getFullYear()}, Made with ❤️ and built with&nbsp;
