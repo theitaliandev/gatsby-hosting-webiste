@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import immagine1 from "../images/300.png";
+import MiglioriHostingPerWordpress from "../images/Migliori Hosting per Wordpress.png";
 import banner from "../images/1024.png";
 import { MdAddCircleOutline, MdRemoveCircleOutline } from "react-icons/md";
 
@@ -165,7 +165,7 @@ export default class IndexPage extends React.Component {
         />
         <Wrapper>
           <div className="primo-paragrafo">
-            <img src={immagine1} alt="Immagine 1" />
+            <img src={MiglioriHostingPerWordpress} alt="Migliori Hosting per Wordpress - Mano con logo WordPress" />
             <p>
               <span
                 style={{

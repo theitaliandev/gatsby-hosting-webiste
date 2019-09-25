@@ -119,11 +119,11 @@ export default class Header extends React.Component {
           <Link to="blog">
             <li>Blog</li>
           </Link>
-          <Link to="contattami">
-            <li>Contattami</li>
+          <Link to="contattaci">
+            <li>Contattaci</li>
           </Link>
-          <Link to="chi-sono">
-            <li>Chi Sono</li>
+          <Link to="chi-siamo">
+            <li>Chi Siamo</li>
           </Link>
         </StyledMenu>
       </StyledNav>

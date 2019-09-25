@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Img from "gatsby-image";
 
 import Layout from "./layout";
+import SEO from "./seo";
 
 function nextPage(i, numPages) {
   if (i < numPages - 1) {
@@ -85,6 +86,13 @@ const BlogList = ({ data, pageContext }) => {
       titolo="Blog"
       sottotitolo={pageContext.index > 0 ? `Pagina ${pageContext.index}` : ""}
     >
+      <SEO
+        title="Blog"
+        keywords={[
+          `blog migliori hosting per wordpress`,
+          `blog hosting per wordpress`
+        ]}
+      />
       {data.allMarkdownRemark.edges.map(edge => (
         <BlogListItem>
           <Img fixed={edge.node.frontmatter.thumbImage.childImageSharp.fixed} />
