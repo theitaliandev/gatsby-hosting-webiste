@@ -390,7 +390,7 @@ export default class IndexPage extends React.Component {
             dei servizi proposti in questo articolo attraverso i nostri link di
             affiliazione. Grazie a questi introiti riusciamo a mantenere
             operativo ed aggiornato{" "}
-            <span style={{ color: "red" }}>“nome del sito”</span>. Grazie mille
+            <span style={{ color: "red" }}>NeuWP</span>. Grazie mille
             per il tuo supporto.
           </p>
           <br />
@@ -727,7 +727,7 @@ export default class IndexPage extends React.Component {
           </p>
           <br />
           <p>
-          Ma in quanti scelgono questo provider di hosting WordPress? La fetta di mercato di Bluehost sarebbe già di per sé garante delle eccellenti prestazioni: Bluehost offre “ospitalità” ad oltre 2 milioni di siti internet e fa parte del gruppo EIG, comunemente conosciuto come HostGator.
+          Ma in quanti scelgono questo provider di hosting WordPress? La fetta di mercato di <StyledATag href="https://www.bluehost.com/track/neunet/" target="_blank">Bluehost</StyledATag> sarebbe già di per sé garante delle eccellenti prestazioni: Bluehost offre “ospitalità” ad oltre 2 milioni di siti internet e fa parte del gruppo EIG, comunemente conosciuto come HostGator.
           </p>
           <br />
           <p>
