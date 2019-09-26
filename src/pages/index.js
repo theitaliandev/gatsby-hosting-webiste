@@ -4,7 +4,9 @@ import styled from "styled-components";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import MiglioriHostingPerWordpress from "../images/Migliori Hosting per Wordpress.png";
-import banner from "../images/1024.png";
+import SiteGround from "../images/SiteGround - Migliori hosting wordpress - NeuWP.com.png";
+import GoDaddy from "../images/GoDaddy - Migliori hosting wordpress - NeuWP.com.png";
+import BlueHost from "../images/BlueHost - Migliori hosting wordpress - NeuWP.com.png";
 import { MdAddCircleOutline, MdRemoveCircleOutline } from "react-icons/md";
 
 const Wrapper = styled.article`
@@ -165,7 +167,10 @@ export default class IndexPage extends React.Component {
         />
         <Wrapper>
           <div className="primo-paragrafo">
-            <img src={MiglioriHostingPerWordpress} alt="Migliori Hosting per Wordpress - Mano con logo WordPress" />
+            <img
+              src={MiglioriHostingPerWordpress}
+              alt="Migliori Hosting per Wordpress - Mano con logo WordPress"
+            />
             <p>
               <span
                 style={{
@@ -503,7 +508,10 @@ export default class IndexPage extends React.Component {
             <span style={{ color: "#1659de" }}>www.SiteGround.com</span>)
           </h2>
           <br />
-          <BannerSitiHosting src={banner} alt="banner" />
+          <BannerSitiHosting
+            src={SiteGround}
+            alt="SiteGround - Migliori Hosting Wordpress - NeuWP"
+          />
           <br />
           <ul>
             <li>
@@ -585,7 +593,10 @@ export default class IndexPage extends React.Component {
             )
           </h2>
           <br />
-          <BannerSitiHosting src={banner} alt="banner" />
+          <BannerSitiHosting
+            src={GoDaddy}
+            alt="GoDaddy - Migliori Hosting Wordpress - NeuWP"
+          />
           <br />
           <ul>
             <li>
@@ -659,7 +670,10 @@ export default class IndexPage extends React.Component {
             <span style={{ color: "#1659de" }}>www.Bluehost.com</span>)
           </h2>
           <br />
-          <BannerSitiHosting src={banner} alt="banner" />
+          <BannerSitiHosting
+            src={BlueHost}
+            alt="BlueHost - Migliori Hosting Wordpress - NeuWP"
+          />
           <br />
           <ul>
             <li>
