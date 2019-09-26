@@ -7,6 +7,9 @@ import MiglioriHostingPerWordpress from "../images/Migliori Hosting per Wordpres
 import SiteGround from "../images/SiteGround - Migliori hosting wordpress - NeuWP.com.png";
 import GoDaddy from "../images/GoDaddy - Migliori hosting wordpress - NeuWP.com.png";
 import BlueHost from "../images/BlueHost - Migliori hosting wordpress - NeuWP.com.png";
+import A2Hosting from "../images/A2Hosting - Migliori hosting wordpress - NeuWP.com.png";
+import Cloudways from "../images/Cloudways - Migliori hosting wordpress - NeuWP.com.png";
+import VHosting from "../images/VHosting - Migliori hosting wordpress - NeuWP.com.png";
 import { MdAddCircleOutline, MdRemoveCircleOutline } from "react-icons/md";
 
 const Wrapper = styled.article`
@@ -130,6 +133,11 @@ const ProConstContainer = styled.div`
     grid-gap: 1.5rem;
   }
 `;
+
+const StyledATag = styled.a`
+  color: #1659de;
+  text-decoration: none;
+`
 
 export default class IndexPage extends React.Component {
   state = {
@@ -691,6 +699,207 @@ export default class IndexPage extends React.Component {
             </li>
           </ul>
           <br />
+          <p>
+          Bluehost è uno degli <span className="bold">hosting provider più popolari tra i possessori di piccoli e medi business</span> online e bloggers. Proprio per questa ragione ci sentiamo di raccomandarti Bluehost come hosting per il tuo sito Wordpress.
+          </p>
+          <br />
+          <p>
+          Il <span className="bold">pacchetto base</span> di Bluehost parte da 3.75 $ al mese, una cifra sicuramente abbordabile considerando l’offerta del dominio gratuito per un anno, del certificato SSL e della possibilità di personalizzare gli indirizzi email.
+          </p>
+          <br />
+          <p>
+          Ma in quanti scelgono questo provider di hosting WordPress? La fetta di mercato di Bluehost sarebbe già di per sé garante delle eccellenti prestazioni: Bluehost offre “ospitalità” ad oltre 2 milioni di siti internet e fa parte del gruppo EIG, comunemente conosciuto come HostGator.
+          </p>
+          <br />
+          <p>
+          <span className="bold">Come si è comportato Bluehost durante una analisi long-run di 12 mesi?</span>
+          </p><br/>
+          <p>
+          L’<span className="bold">uptime medio</span> nel corso degli ultimi 12 mesi è stato <span className="bold">maggiore del 99.99%</span> e il tempo di caricamento si è assestato su una media di 406ms. Cosa vuol dire questo dato? Semplicemente che i siti ospitati da Bluehost sono stati “down”, nell’ultimo anno, per una sola ora complessiva; senza ombra di dubbio, dunque, stiamo parlando di uno degli <span className="bold">hosting provider più affidabili.</span>
+          </p>
+          <br />
+          <p>Bluehost, inoltre, offre <span className="bold">un’assistenza clienti sempre operativa</span>, 24 ore su 24, 7 giorni su 7.
+Ti basterà iniziare una live chat a qualsiasi ora della giornata per risolvere ogni problematica relativa alla tua struttura Hosting+WordPress.</p>
+<br />
+<p>Mentre l’offerta tecnica è di assoluto valore, per quel che riguarda l’offerta economica potresti avere un po’ di dubbi; al di là dell’offerta iniziale, purtroppo non esistono pacchetti mensili di hosting ma solo annuali. 
+</p>
+<br />
+<ProConstContainer>
+            <ProBox>
+              <ProBoxTitle>PRO</ProBoxTitle>
+              <p>Valori eccezionali di uptime e tempo di caricamento. Migrazione gratuita. Dominio gratuito. Raccomandato da <StyledATag href="https://wordpress.org">WordPress.org</StyledATag>
+</p>
+            </ProBox>
+            <ConstBox>
+              <ConstBoxTitle>CONTRO</ConstBoxTitle>
+              <p>Nessuna opzione di piano mensile dopo la prima offerta iniziale, abbonamenti sottoscrivibili solo annualmente.</p>
+            </ConstBox>
+          </ProConstContainer>
+          <br />
+          <br />
+          <h2>
+            4. A2 Hosting (
+            <span style={{ color: "#1659de" }}>www.A2Hosting.com</span>)
+          </h2>
+          <br />
+          <BannerSitiHosting
+            src={A2Hosting}
+            alt="A2Hosting - Migliori Hosting Wordpress - NeuWP"
+          />
+          <br />
+          <ul>
+            <li>
+              <span className="bold">Uptime:</span> >99.9%
+            </li>
+            <li>
+              <span className="bold">Tempo di caricamento:</span> 392ms
+            </li>
+            <li>
+              <span className="bold">Assistenza clienti:</span> 5/5
+            </li>
+            <li>
+              <span className="bold">Sito internet:</span>{" "}
+              <span style={{ color: "#1659de" }}>www.A2Hosting.com</span>
+            </li>
+          </ul>
+          <br />
+          <p>
+          <span className="bold">Importante precisazione:</span> Ci teniamo a farti notare che A2 Hosting si trova così in alto nella nostra classifica poiché fornisce un <span className="bold">tempo di caricamento incredibilmente veloce;</span> come avrai subito notato, infatti, il suo uptime non è propriamente ottimale, con un valore pari a 99.91%.
+          </p>
+          <br />
+          <p>
+          Sebbene sia una compagnia assolutamente non recente (è stata fondata nel 2001) nel mondo degli hosting provider per Wordpress, A2 Hosting ha conosciuto la fama solo recentemente.
+          </p>
+          <br />
+          <p>
+          Di sicuro, <span className="bold">l’offerta più accattivante</span> per i potenziali clienti è, appunto, legata alla velocità di caricamento offerta da questo hosting: “i nostri <span className="bold">Turbo Servers</span> sono 20 volte più veloci di quelli dei nostri competitor!”, affermano sul solo sito web.
+          </p>
+          <br />
+          <p>
+          Effettivamente, sebbene non possiamo confermare che siano effettivamente 20 volte più veloci, i loro server offrono davvero una velocità molto maggiore rispetto a pur ottimi servizi come SiteGround o HostGator.
+          </p>
+          <br />
+          <p>
+          Nei 12 mesi la velocità si è attestata su una ottima media di 392ms, un valore che ci tenta di definirlo un tempo di caricamento pagina quasi istantaneo. 
+A2 Hosting implementa di default un <span className="bold">sofisticato sistema di caching</span>, il quale memorizza dati relativi al sito internet nel browser del tuo utente, in modo che nel momento in cui questo accederà nuovamente, in futuro, non dovrà richiedere ancora una volta al server  i dati per renderizzare la pagina.
+          </p>
+          <br />
+          <p>
+            <span className="bold">Sfortunatamente il valore di uptime relativo all’hosting A2 si è attestato su una media di 99.91%</span> nell’arco degli ultimi 12 mesi (circa 8 ore di downtime).
+          </p>
+          <br />
+          <p>L’hosting provider A2 offre un’assistenza clienti 24/7 attraverso live chat, email, telefono e sistema di ticketing. </p>
+          <br />
+          <p>Il prezzo di lancio è di sicuro buono, con uno shared hosting offerto a 3.41€/mese.</p>
+          <br/>
+          <ProConstContainer>
+            <ProBox>
+              <ProBoxTitle>PRO</ProBoxTitle>
+              <p>Hosting WordPress con tempo di caricamento velocissimo. Server ottimizzati per WordPress.</p>
+            </ProBox>
+            <ConstBox>
+              <ConstBoxTitle>CONTRO</ConstBoxTitle>
+              <p>Uptime medio inconsistente rispetto ai competitor (99.91%).</p>
+            </ConstBox>
+          </ProConstContainer>
+          <br />
+          <br />
+          <h2>
+            5. Cloudways (
+            <span style={{ color: "#1659de" }}>www.Cloudways.com</span>)
+          </h2>
+          <br />
+          <BannerSitiHosting
+            src={Cloudways}
+            alt="Cloudways - Migliori Hosting Wordpress - NeuWP"
+          />
+          <br />
+          <ul>
+            <li>
+              <span className="bold">Uptime:</span> >99.9%
+            </li>
+            <li>
+              <span className="bold">Tempo di caricamento:</span> decisamente inferiore a 200ms
+            </li>
+            <li>
+              <span className="bold">Assistenza clienti:</span> 3/5
+            </li>
+            <li>
+              <span className="bold">Sito internet:</span>{" "}
+              <span style={{ color: "#1659de" }}>www.Cloudways.com</span>
+            </li>
+          </ul>
+          <br />
+          <p>
+          Nel mondo sempre in fermento dei servizi di hosting WordPress Cloudways rappresenta certamente un <span className="bold">punto fermo.</span> L’azienda, con sede a Malta, è <span className="bold">una delle più apprezzate</span> da chi usufruisce dei <span className="bold">servizi di hosting per blog e siti realizzati con WordPress.</span>
+          </p>
+          <br />
+          <p>
+          I loro servizi partono da 10$/mese, pertanto non proprio prezzi super competitivi, ma <span className="bold">la qualità del servizio</span> è fuori discussione, soprattutto in termini di uptime, con un valore del 99.99% garantito e tempi di upload che presentano picchi di 37 ms!
+            </p>
+            <br />
+            <p>
+            <span className="bold">Nota dolente il servizio clienti:</span> in questo caso è presente il servizio h24, ma spesso scortesia e incompetenza non permettono di arrivare alla risoluzione dei problemi.
+            </p>
+            <br />
+            <ProConstContainer>
+            <ProBox>
+              <ProBoxTitle>PRO</ProBoxTitle>
+              <p>Uptime e tempo di caricamento eccellenti.</p>
+            </ProBox>
+            <ConstBox>
+              <ConstBoxTitle>CONTRO</ConstBoxTitle>
+              <p>Assistenza clienti non all’altezza.</p>
+            </ConstBox>
+          </ProConstContainer>
+          <br />
+          <br />
+          <h2>
+            6. VHosting (
+            <span style={{ color: "#1659de" }}>www.VHosting-it.com</span>)
+          </h2>
+          <br />
+          <BannerSitiHosting
+            src={VHosting}
+            alt="VHosting - Migliori Hosting Wordpress - NeuWP"
+          />
+          <br />
+          <ul>
+            <li>
+              <span className="bold">Uptime:</span> 99.9%
+            </li>
+            <li>
+              <span className="bold">Tempo di caricamento:</span> decisamente inferiore a 200s
+            </li>
+            <li>
+              <span className="bold">Assistenza clienti:</span> 4/5
+            </li>
+            <li>
+              <span className="bold">Sito internet:</span>{" "}
+              <span style={{ color: "#1659de" }}>www.VHosting-it.com</span>
+            </li>
+          </ul>
+          <br />
+          <p>
+          Passiamo ora ad un <span className="bold">servizio di hosting 100% italiano:</span> VHosting! 
+          </p>
+          <br />
+          <p>I ragazzi di VHosting hanno in canna <span className="bold">diversi piani</span> per te che sei interessato al miglior hosting WordPress, che vanno da 40€/anno fino ad arrivare a 85€/anno.</p>
+          <br />
+          <p>I <span className="bold">punti di forza</span> sono sicuramente l’<span className="bold">uptime</span> del 99.9% e un <span className="bold">servizio clienti davvero ottimo,</span> se non fosse per la pecca di non avere un servizio operativo h24, 7/7.</p>
+          <br />
+          <p>Inoltre, il  fatto di avere i server dislocati in Europa (tra Italia, Germania e Francia) sarà per te davvero un vantaggio, poiché sarà maggiore la garanzia che avrai di avere un <span className="bold">servizio all’altezza delle tue aspettative</span> e di quelle dei tuoi utenti, grazie alla garanzia di avere il massimo in termini di performance e assistenza.</p>
+          <br />
+            <ProConstContainer>
+            <ProBox>
+              <ProBoxTitle>PRO</ProBoxTitle>
+              <p>Buon servizio clienti, costi ridotti, uptime elevato.</p>
+            </ProBox>
+            <ConstBox>
+              <ConstBoxTitle>CONTRO</ConstBoxTitle>
+              <p>Manca servizio assistenza h24, prezzi riportati senza iva.</p>
+            </ConstBox>
+          </ProConstContainer>
         </Wrapper>
       </Layout>
     );
