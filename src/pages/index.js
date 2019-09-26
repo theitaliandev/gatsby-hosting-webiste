@@ -138,6 +138,25 @@ const StyledATag = styled.a`
   color: #1659de;
   text-decoration: none;
 `
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`
+const CustomButton = styled.button`
+  padding: 20px;
+  border: 2px solid #1659de;
+  border-radius: 7px;
+  background-color: white;
+  color: #1659de;
+  font-size: 1.15em;
+  font-weight: bold;
+  transition: 0.15s linear;
+  :hover {
+    background-color: #1659de;
+    color: white;
+    cursor: pointer;
+  }
+`
 
 export default class IndexPage extends React.Component {
   state = {
@@ -675,12 +694,12 @@ export default class IndexPage extends React.Component {
           <br />
           <h2>
             3. Bluehost (
-            <span style={{ color: "#1659de" }}>www.Bluehost.com</span>)
+            <span style={{ color: "#1659de" }}><StyledATag href="https://www.bluehost.com/track/neunet/" target="_blank">www.Bluehost.com</StyledATag></span>)
           </h2>
           <br />
           <BannerSitiHosting
             src={BlueHost}
-            alt="BlueHost - Migliori Hosting Wordpress - NeuWP"
+            alt="Bluehost - Migliori Hosting Wordpress - NeuWP"
           />
           <br />
           <ul>
@@ -695,7 +714,7 @@ export default class IndexPage extends React.Component {
             </li>
             <li>
               <span className="bold">Sito internet:</span>{" "}
-              <span style={{ color: "#1659de" }}>www.Bluehost.com</span>
+              <span style={{ color: "#1659de" }}><StyledATag href="https://www.bluehost.com/track/neunet/" target="_blank">www.Bluehost.com</StyledATag></span>
             </li>
           </ul>
           <br />
@@ -735,6 +754,10 @@ Ti basterà iniziare una live chat a qualsiasi ora della giornata per risolvere 
               <p>Nessuna opzione di piano mensile dopo la prima offerta iniziale, abbonamenti sottoscrivibili solo annualmente.</p>
             </ConstBox>
           </ProConstContainer>
+          <br />
+          <form method="get" action="https://www.bluehost.com/track/neunet/">
+          <ButtonContainer><CustomButton type="submit">Scopri le ultime offerte Bluehost</CustomButton></ButtonContainer>
+         </form>
           <br />
           <br />
           <h2>
