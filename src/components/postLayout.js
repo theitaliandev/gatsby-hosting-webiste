@@ -6,8 +6,7 @@ import Layout from "./layout";
 const PostLayout = props => {
   const { markdownRemark } = props.data;
   return (
-    <Layout>
-      <h1>{markdownRemark.frontmatter.title}</h1>
+    <Layout titolo={markdownRemark.frontmatter.title}>
       <p>Tempo di lettura: {markdownRemark.timeToRead} minuti</p>
       <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
     </Layout>

@@ -11,7 +11,7 @@ function nextPage(i, numPages) {
   if (i < numPages - 1) {
     return (
       <Link
-        to={`/blog/pagina${i + 1}`}
+        to={`/recensioni/pagina${i + 1}`}
         style={{ textDecoration: "none", color: "#1659de" }}
       >
         Prossima Pagina
@@ -23,7 +23,7 @@ function previousPage(i) {
   if (i === 0) return;
   if (i === 1) {
     return (
-      <Link to="/blog" style={{ textDecoration: "none", color: "#1659de" }}>
+      <Link to="/recensioni" style={{ textDecoration: "none", color: "#1659de" }}>
         Pagina Precedente
       </Link>
     );
@@ -31,7 +31,7 @@ function previousPage(i) {
   if (i > 1) {
     return (
       <Link
-        to={`/blog/pagina${i - 1}`}
+        to={`/recensioni/pagina${i - 1}`}
         style={{ textDecoration: "none", color: "#1659de" }}
       >
         Pagina Precedente
@@ -40,7 +40,7 @@ function previousPage(i) {
   }
 }
 
-const BlogListItem = styled.div`
+const RecensioniListItem = styled.div`
   text-align: center;
   button {
     background: white;
@@ -80,49 +80,54 @@ const PaginationButtonContainer = styled.div`
   padding: 1rem;
 `;
 
-const BlogList = ({ data, pageContext }) => {
+const RecensioniList = ({ data, pageContext }) => {
+  console.log(data)
   return (
     <Layout
-      titolo="Blog"
+      titolo="Recensioni"
       sottotitolo={pageContext.index > 0 ? `Pagina ${pageContext.index}` : ""}
     >
       <SEO
-        title="Blog"
+        title="Recensioni"
         keywords={[
-          `blog migliori hosting per wordpress`,
-          `blog hosting per wordpress`
+          `recensioni migliori hosting per wordpress`,
+          `recensioni hosting per wordpress`
         ]}
       />
       {data.allMarkdownRemark.edges.map(edge => {
-        if(edge.node.frontmatter.postType === "blog"){
-       return  <BlogListItem>
+        if(edge.node.frontmatter.postType === "recensione"){
+          console.log("ci sono")
+       return  <RecensioniListItem>
           <Img fixed={edge.node.frontmatter.thumbImage.childImageSharp.fixed} />
           <div>
             <Link
-              to={`blog/${edge.node.frontmatter.slug}`}
+              to={`recensioni/${edge.node.frontmatter.slug}`}
               style={{ textDecoration: "none" }}
             >
               <h2>{edge.node.frontmatter.title}</h2>
             </Link>
             <p>{edge.node.excerpt}</p>
-            <Link to={`blog/${edge.node.frontmatter.slug}`}>
+            <Link to={`recensioni/${edge.node.frontmatter.slug}`}>
               <button>Continua a leggere</button>
             </Link>
           </div>
-        </BlogListItem>
+        </RecensioniListItem>
       }
-      else return null})}
+      else{
+        console.log("non ci sono")
+        return null}})}
       <PaginationButtonContainer>
         <div>{nextPage(pageContext.index, pageContext.numberOfPages)}</div>
         <div>{previousPage(pageContext.index, pageContext.numberOfPages)}</div>
       </PaginationButtonContainer>
     </Layout>
-  )}
+  );
+};
 
-export const blogPostsTitles = graphql`
+export const recensioniPostsTitles = graphql`
   query($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      filter: {frontmatter: {postType: {eq: "blog"}}}
+      filter: {frontmatter: {postType: {eq: "recensione"}}}
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip
@@ -148,4 +153,4 @@ export const blogPostsTitles = graphql`
   }
 `;
 
-export default BlogList;
+export default RecensioniList;

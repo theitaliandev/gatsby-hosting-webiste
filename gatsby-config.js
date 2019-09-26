@@ -22,6 +22,13 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `recensioni`,
+        path: `${__dirname}/src/pages/recensioni/posts`
+      }
+    },
+    {
       resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: "UA-109556266-4",

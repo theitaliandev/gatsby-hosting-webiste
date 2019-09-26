@@ -1,9 +1,9 @@
 ---
-slug: "post1"
-title: "Post Numero 1"
+slug: "recensione1"
+title: "Recensione 1"
 date: "2019-02-14"
 thumbImage: "../../../images/300.png"
-postType: blog
+postType: recensione
 ---
 
 # Sorte spem rictus

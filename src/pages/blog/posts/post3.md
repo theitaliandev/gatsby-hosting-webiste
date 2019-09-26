@@ -3,6 +3,7 @@ slug: "post3"
 title: "Post Numero 3"
 date: "2019-03-01"
 thumbImage: "../../../images/300.png"
+postType: blog
 ---
 
 # Sorte spem rictus
