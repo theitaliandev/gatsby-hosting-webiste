@@ -42,7 +42,7 @@ Anche in questo caso, stiamo parlando di un parametro che è assolutamente neces
 
 ### Cosa offre GoDaddy ai suoi clienti?
 
-![Prezzi Piani Hosting per Wordpress GoDaddy](prezziGoDaddy.png)
+![Prezzi Piani Hosting per Wordpress GoDaddy](../../../images/prezziGoDaddy.png)
 L’offerta di GoDaddy è articolata in ben 4 piani, ahinoi non propriamente economici.
 <br/><br/>
 È bene precisare che, per tutti i piano, GoDaddy offre i seguenti servizi:
