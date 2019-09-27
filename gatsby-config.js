@@ -17,15 +17,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `posts`,
-        path: `${__dirname}/src/pages/blog/posts`
+        path: `${__dirname}/src/pages/blog`
       }
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `recensioni`,
-        path: `${__dirname}/src/pages/recensioni/posts`
+        path: `${__dirname}/src/pages/recensioni`
       }
     },
     {
@@ -46,16 +45,18 @@ module.exports = {
         commonmark: true,
         footnotes: true,
         pedantic: true,
-        gfm: true
-      },
-      plugins: [
-        {
-          resolve: "gatsby-remark-images",
-          options: {
-            maxWidth: 740
-          }
-        }
-      ]
+        gfm: true,
+        plugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 740,
+              sizeByPixelDensity: true
+            }
+          },
+          "gatsby-remark-copy-linked-files"
+        ]
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,

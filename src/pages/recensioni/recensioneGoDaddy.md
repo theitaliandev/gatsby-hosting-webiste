@@ -2,7 +2,7 @@
 slug: "recensione-hosting-godaddy"
 title: "Hosting WordPress GoDaddy: la nostra recensione"
 date: "2019-09-27"
-thumbImage: "../../../../images/300.png"
+thumbImage: "../../images/300.png"
 postType: recensione
 ---
 
@@ -42,7 +42,8 @@ Anche in questo caso, stiamo parlando di un parametro che è assolutamente neces
 
 ### Cosa offre GoDaddy ai suoi clienti?
 
-![Prezzi Piani Hosting per Wordpress GoDaddy](prezziGoDaddy.png)
+![Prezzi Hosting Wordpress GoDaddy](./images/prezziGoDaddy.png)
+<br/>
 L’offerta di GoDaddy è articolata in ben 4 piani, ahinoi non propriamente economici.
 <br/><br/>
 È bene precisare che, per tutti i piano, GoDaddy offre i seguenti servizi:

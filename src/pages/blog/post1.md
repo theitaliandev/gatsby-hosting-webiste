@@ -2,7 +2,7 @@
 slug: "post1"
 title: "Post Numero 1"
 date: "2019-02-14"
-thumbImage: "../../../images/300.png"
+thumbImage: "../../images/300.png"
 postType: blog
 ---
 
