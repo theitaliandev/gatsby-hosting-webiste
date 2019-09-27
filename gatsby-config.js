@@ -39,8 +39,24 @@ module.exports = {
     `gatsby-plugin-sharp`,
     "gatsby-plugin-styled-components",
     "gatsby-plugin-sitemap",
-    "gatsby-transformer-remark",
     "gatsby-plugin-catch-links",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        commonmark: true,
+        footnotes: true,
+        pedantic: true,
+        gfm: true
+      },
+      plugins: [
+        {
+          resolve: "gatsby-remark-images",
+          options: {
+            maxWidth: 740
+          }
+        }
+      ]
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

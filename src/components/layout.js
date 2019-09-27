@@ -14,6 +14,10 @@ const Wrapper = styled.div`
   grid-template-rows: auto auto 1fr auto;
   grid-template-columns: 100%;
   min-height: 100vh;
+  a {
+    text-decoration: none;
+    color: #1659de;
+  }
 `;
 
 const Layout = ({ children, titolo, sottotitolo }) => (
