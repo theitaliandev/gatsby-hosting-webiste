@@ -40,6 +40,7 @@ module.exports = {
     "gatsby-plugin-styled-components",
     "gatsby-plugin-sitemap",
     "gatsby-transformer-remark",
+    "gatsby-plugin-catch-links",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

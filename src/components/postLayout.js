@@ -7,7 +7,7 @@ const PostLayout = props => {
   const { markdownRemark } = props.data;
   return (
     <Layout titolo={markdownRemark.frontmatter.title}>
-      <p>Tempo di lettura: {markdownRemark.timeToRead} minuti</p>
+      <p style={{margin: "20px 0px"}}>🕒<span style={{fontWeight: "bold"}}>Tempo di lettura:</span> {markdownRemark.timeToRead} minuti</p>
       <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
     </Layout>
   );
