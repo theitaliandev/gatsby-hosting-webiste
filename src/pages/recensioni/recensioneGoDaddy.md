@@ -1,7 +1,7 @@
 ---
 slug: "recensione-hosting-godaddy"
 title: "Hosting WordPress GoDaddy: la nostra recensione"
-date: "2019-09-27"
+date: "2020-02-24"
 thumbImage: "../../images/recensioneGoDaddy.png"
 postType: recensione
 ---
@@ -66,10 +66,10 @@ In cosa consiste la garanzia “soddisfatti o rimborsati”? La __garanzia offer
 ### Andiamo ora a vedere, invece, in cosa consistono i diversi piani!
 <br/>
 
-__Piano Basic:__ ad un prezzo di 1€/mese GoDaddy ti mette a disposizione quanto segue
+__Piano Basic:__ ad un prezzo di 3,92€/mese GoDaddy ti mette a disposizione quanto segue
 <br/><br/>
 * La possibilità di mettere online un sito web, con dominio gratuito nel caso di acquisto del piano annuale!
-* 10 GB di spazio di memorizzazione
+* 30 GB di spazio di memorizzazione
 * Un host che ti consentirà di gestire fino a ben 25000 utenti al mese!
 * Backup quotidiani gratuiti con ripristino in 1 clic
 * Scansioni antimalware automatiche
@@ -79,12 +79,13 @@ __Piano Basic:__ ad un prezzo di 1€/mese GoDaddy ti mette a disposizione quant
 Se sei interessato al Piano Basic, lo trovi [qui](http://www.kqzyfj.com/click-9182915-11478147).
 <br/><br/>
 
-Passiamo ora al __Piano Deluxe__, che invece comprende le seguenti feature (in aggiunta a quelle del Basic), al prezzo di 7,99€/mese:
+Passiamo ora al __Piano Deluxe__, che invece comprende le seguenti feature (in aggiunta a quelle del Basic), al prezzo di 8,53€/mese:
 <br/><br/>
-* 15 GB di spazio di archiviazione
-* Garanzia di sito up fino a 35000 utenti al mese
+* 75 GB di spazio di archiviazione
+* Dominio gratuito
+* Garanzia di sito up fino a 100000 utenti al mese
 * Procedura guidata SEO integrata
-* Sito di gestione temporanea con un clic
+* Sito di testing con un clic
 <br/><br/>
 
 Se sei interessato al Piano Deluxe, lo trovi [qui](http://www.kqzyfj.com/click-9182915-11478147).
@@ -92,34 +93,37 @@ Se sei interessato al Piano Deluxe, lo trovi [qui](http://www.kqzyfj.com/click-9
 
 Il __Piano Ultimate__, invece, viene presentato dalla stessa GoDaddy come il migliore per rapporto qualità/prezzo, offrendo, in più rispetto ai due piani precedenti, quanto segue:
 <br/><br/>
-* Fino a 2 siti web
-* 30 GB di spazio di archiviazione
-* Garanzia di sito up fino a 400000 utenti al mese
-* Sito di gestione temporanea con un clic
+* 1 sito web
+* Dominio gratuito
+* Spazio di memorizzazione illimitato
+* Garanzia di sito up con visitatori illimitati mensilmente
+* Sito di testing un clic
 * Certificato SSL gratuito (per il 1° anno)
 <br/><br/>
 
 Se sei interessato al Piano Ultimate, lo trovi [qui](http://www.kqzyfj.com/click-9182915-11478147).
 <br/><br/>
 
-__Ti ricordo che, con GoDaddy, il certificato SSL costa, se preso separatamente, circa 68€ all’anno.__
+Infine, passiamo ora al piano più costoso, il __Ecommerce__; cosa ti offre questo servizio, al costo non certamente modico di 23,17€/mese? Scopriamolo:
 <br/><br/>
 
-Infine, passiamo ora al piano più costoso, il __Piano Pro5+__; cosa ti offre questo servizio, al costo non certamente modico di 30,99€/mese? Scopriamolo:
+* 1 sito web
+* Dominio gratuito
+* Spazio di memorizzazione illimitato
+* Garanzia di sito up con visitatori illimitati mensilmente
+* Sito di testing in 1 clic
+* Certificato SSL
+* Nessuna commissione per le transazioni
+* Prodotti illimitati
+* Prenotazione e pianificazione di appuntamenti
+* Tariffe di spedizione in tempo reale
+* Accesso gratuito alle migliori estensioni premium di [WooCommerce](https://woocommerce.com/)
 <br/><br/>
 
-* Da 5 a 50 siti web
-* Da 50 a 200 GB di spazio di archiviazione
-* Certificati SSL gratuiti - 1 per sito
-* Strumenti di manutenzione del sito gratuiti
-* Misurazione di prestazioni e operatività in tempo reale
-* Rapporti automatici dei clienti
+Insomma, sicuramente un piano di tutto rispetto per il tuo eCommerce!
 <br/><br/>
 
-Insomma, sicuramente un piano di tutto rispetto!
-<br/><br/>
-
-Se ti interessa il Piano Pro5+, lo trovi [qui](http://www.kqzyfj.com/click-9182915-11478147).
+Se ti interessa il Piano Ecommerce, lo trovi [qui](http://www.kqzyfj.com/click-9182915-11478147).
 <br/><br/>
 
 I dati che ti abbiamo messo a disposizione sono tanti e certamente non è facilissimo scegliere il piano migliore. Chiaramente, __devi partire dalle tue esigenze__: se stai iniziano ora ad addentrarti nel mondo dei siti web e di quelli creati con WordPress in particolare, __ti consigliamo di partire con il piano Deluxe__, un po’ più costoso del Basic, ma in grado di offrire maggiore supporto in termini SEO, caratteristica sicuramente non trascurabile per chi è al lancio.
@@ -143,7 +147,7 @@ L’unica pecca è l’assenza di un servizio operativo h24 7/7, ma si può in p
 ## Hosting WordPress GoDaddy: è sicuro?
 
 Cosa fa GoDaddy per la sicurezza del tuo sito web?
-__GoDaddy offre i certificati SSL a circa 60€/anno (oppure gratuitamente con i pacchetti più costosi).__ Inoltre, garantisce un servizio di backup del tuo sito web che ti permetterà di dormire sonni tranquilli, non perdendo la tua presenza online anche in caso di attacchi hacker.
+__GoDaddy offre i certificati SSL a partire da 5,80€ per il primo anno e da 85,39€ a partire dagli anni successivi al primo (oppure gratuitamente con i pacchetti più costosi).__ Inoltre, garantisce un servizio di backup del tuo sito web che ti permetterà di dormire sonni tranquilli, non perdendo la tua presenza online anche in caso di attacchi hacker.
 <br/><br/>
 
 Molto spesso i piccoli imprenditori non si preoccupano di questo aspetto, ma è fondamentale, poiché il sito web è un vero e proprio investimento che può garantire un ritorno molto, molto elevato: per questo motivo è fondamentale proteggerlo nel migliore dei modi!
